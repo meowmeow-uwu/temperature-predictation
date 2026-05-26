@@ -1,0 +1,197 @@
+[
+  {
+    "idx": 0,
+    "type": "markdown",
+    "source": "# PH\u1ea6N 4: TR\u00cdCH XU\u1ea4T \u0110\u1eb6C TR\u01afNG (FEATURE ENGINEERING)\n\nNotebook n\u00e0y th\u1ef1c hi\u1ec7n to\u00e0n b\u1ed9 qu\u00e1 tr\u00ecnh tr\u00edch"
+  },
+  {
+    "idx": 1,
+    "type": "markdown",
+    "source": "## 0. Import th\u01b0 vi\u1ec7n v\u00e0 Load d\u1eef li\u1ec7u"
+  },
+  {
+    "idx": 2,
+    "type": "code",
+    "source": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nfrom sk"
+  },
+  {
+    "idx": 3,
+    "type": "markdown",
+    "source": "---\n## 1. L\u1ef1a ch\u1ecdn v\u00e0 lo\u1ea1i b\u1ecf \u0111\u1eb7c tr\u01b0ng\n\nPh\u00e2n t\u00edch ma tr\u1eadn t\u01b0\u01a1ng quan (Correlation Matrix) \u0111\u1ec3 \u0111\u00e1nh g"
+  },
+  {
+    "idx": 4,
+    "type": "code",
+    "source": "# ==================================================\n# 1.1 Ph\u00e2n t\u00edch ma tr\u1eadn t\u01b0\u01a1ng quan\n# =========="
+  },
+  {
+    "idx": 5,
+    "type": "markdown",
+    "source": "---\n## 2. Ph\u00e2n t\u00edch th\u00e0nh ph\u1ea7n ch\u00ednh (PCA)\n\nTheo t\u00e0i li\u1ec7u b\u00e0i gi\u1ea3ng Ch\u01b0\u01a1ng 7 - Ph\u00e2n t\u00edch d\u1eef li\u1ec7u nhi"
+  },
+  {
+    "idx": 6,
+    "type": "markdown",
+    "source": "### 2.1 Chu\u1ea9n h\u00f3a d\u1eef li\u1ec7u (StandardScaler)\n\nChu\u1ea9n h\u00f3a Z-score l\u00e0 b\u01b0\u1edbc b\u1eaft bu\u1ed9c tr\u01b0\u1edbc PCA v\u00ec PCA d\u1ef1a "
+  },
+  {
+    "idx": 7,
+    "type": "code",
+    "source": "# ==================================================\n# 2.1 Chu\u1ea9n h\u00f3a d\u1eef li\u1ec7u (StandardScaler)\n# C\u00f4ng"
+  },
+  {
+    "idx": 8,
+    "type": "code",
+    "source": "# ==================================================\n# TR\u1ef0C QUAN H\u00d3A: So s\u00e1nh ph\u00e2n ph\u1ed1i Tr\u01b0\u1edbc v\u00e0 Sau"
+  },
+  {
+    "idx": 9,
+    "type": "markdown",
+    "source": "### 2.2 T\u00ednh ma tr\u1eadn hi\u1ec7p ph\u01b0\u01a1ng sai\n\nMa tr\u1eadn hi\u1ec7p ph\u01b0\u01a1ng sai S \u0111\u01b0\u1ee3c t\u00ednh theo c\u00f4ng th\u1ee9c:\n$$S = \\fra"
+  },
+  {
+    "idx": 10,
+    "type": "code",
+    "source": "# ==================================================\n# 2.2 T\u00ednh ma tr\u1eadn hi\u1ec7p ph\u01b0\u01a1ng sai\n# =========="
+  },
+  {
+    "idx": 11,
+    "type": "markdown",
+    "source": "### 2.3 Ph\u00e2n t\u00edch gi\u00e1 tr\u1ecb ri\u00eang (Explained Variance)\n\nT\u1ec9 l\u1ec7 th\u00f4ng tin \u0111\u01b0\u1ee3c gi\u1eef l\u1ea1i khi ch\u1ecdn K th\u00e0nh "
+  },
+  {
+    "idx": 12,
+    "type": "code",
+    "source": "# ==================================================\n# 2.3 Ph\u00e2n t\u00edch gi\u00e1 tr\u1ecb ri\u00eang (Explained Varian"
+  },
+  {
+    "idx": 13,
+    "type": "markdown",
+    "source": "### 2.4 Ph\u00e2n t\u00edch Loading Matrix\n\nLoading Matrix th\u1ec3 hi\u1ec7n m\u1ee9c \u0111\u1ed9 \u0111\u00f3ng g\u00f3p (t\u1ea3i tr\u1ecdng) c\u1ee7a t\u1eebng bi\u1ebfn "
+  },
+  {
+    "idx": 14,
+    "type": "code",
+    "source": "# ==================================================\n# 2.4 Ph\u00e2n t\u00edch Loading Matrix\n# =============="
+  },
+  {
+    "idx": 15,
+    "type": "markdown",
+    "source": "### 2.5 L\u1ef1a ch\u1ecdn s\u1ed1 chi\u1ec1u K = 5 v\u00e0 Transform d\u1eef li\u1ec7u\n\nD\u1ef1a tr\u00ean k\u1ebft qu\u1ea3 ph\u00e2n t\u00edch Explained Variance,"
+  },
+  {
+    "idx": 16,
+    "type": "code",
+    "source": "# ==================================================\n# 2.5 L\u1ef1a ch\u1ecdn K = 5 v\u00e0 Transform d\u1eef li\u1ec7u\n# w l"
+  },
+  {
+    "idx": 17,
+    "type": "code",
+    "source": "# ==================================================\n# TR\u1ef0C QUAN H\u00d3A: So s\u00e1nh kh\u00f4ng gian \u0111\u1eb7c tr\u01b0ng T"
+  },
+  {
+    "idx": 18,
+    "type": "markdown",
+    "source": "---\n## 3. Tr\u00edch xu\u1ea5t \u0111\u1eb7c tr\u01b0ng th\u1eddi gian (Sin/Cos Encoding)\n\nD\u1ef1a tr\u00ean k\u1ebft qu\u1ea3 ph\u00e2n t\u00edch EDA (seasona"
+  },
+  {
+    "idx": 19,
+    "type": "code",
+    "source": "# ==================================================\n# 3.1 Sin/Cos encoding cho gi\u1edd trong ng\u00e0y (chu "
+  },
+  {
+    "idx": 20,
+    "type": "code",
+    "source": "# ==================================================\n# 3.2 Sin/Cos encoding cho th\u00e1ng trong n\u0103m (chu"
+  },
+  {
+    "idx": 21,
+    "type": "code",
+    "source": "# ==================================================\n# Th\u00eam encoding v\u00e0o train_pca_df v\u00e0 test_pca_df"
+  },
+  {
+    "idx": 22,
+    "type": "markdown",
+    "source": "---\n## 4. T\u1ea1o \u0111\u1eb7c tr\u01b0ng tr\u1ec5 (Lag Features)\n\nD\u1ef1a tr\u00ean ph\u00e2n t\u00edch ACF/PACF v\u00e0 Lag Plots t\u1eeb EDA, nhi\u1ec7t \u0111"
+  },
+  {
+    "idx": 23,
+    "type": "code",
+    "source": "# ==================================================\n# 4. T\u1ea1o Lag Features\n# Gh\u00e9p train + test tr\u01b0\u1edbc"
+  },
+  {
+    "idx": 24,
+    "type": "code",
+    "source": "# ==================================================\n# TR\u1ef0C QUAN H\u00d3A: So s\u00e1nh Tr\u01b0\u1edbc v\u00e0 Sau t\u1ea1o Lag F"
+  },
+  {
+    "idx": 25,
+    "type": "markdown",
+    "source": "---\n## 5. T\u1ed5ng h\u1ee3p b\u1ed9 \u0111\u1eb7c tr\u01b0ng cu\u1ed1i c\u00f9ng"
+  },
+  {
+    "idx": 26,
+    "type": "code",
+    "source": "# ==================================================\n# 5. T\u1ed5ng h\u1ee3p v\u00e0 th\u1ed1ng k\u00ea b\u1ed9 \u0111\u1eb7c tr\u01b0ng cu\u1ed1i c\u00f9n"
+  },
+  {
+    "idx": 27,
+    "type": "code",
+    "source": "# =======================================================\n# CHU\u1ea8N B\u1eca 3 PHI\u00caN B\u1ea2N DATASET T\u1eea C\u00c1C BI\u1ebeN"
+  },
+  {
+    "idx": 28,
+    "type": "markdown",
+    "source": "# PH\u1ea6N 5: HU\u1ea4N LUY\u1ec6N M\u00d4 H\u00ccNH TH\u1ed0NG K\u00ca & MACHINE LEARNING"
+  },
+  {
+    "idx": 29,
+    "type": "markdown",
+    "source": "## 5.1. M\u00f4 h\u00ecnh SARIMAX (Th\u1ed1ng k\u00ea)\nV\u00ec SARIMAX \u0111\u00e0o t\u1ea1o tr\u00ean s\u1ed1 l\u01b0\u1ee3ng d\u1eef li\u1ec7u l\u1edbn t\u1ed1n r\u1ea5t nhi\u1ec1u th\u1eddi g"
+  },
+  {
+    "idx": 30,
+    "type": "code",
+    "source": "# =======================================================\n# T\u1ef0 \u0110\u1ed8NG D\u00d2 T\u00ccM THAM S\u1ed0 (AUTO-ARIMA) V\u00c0 H"
+  },
+  {
+    "idx": 31,
+    "type": "code",
+    "source": "!uv add xgboost"
+  },
+  {
+    "idx": 32,
+    "type": "code",
+    "source": "# ==========================================\n# CELL 1: IMPORT LIBRARIES\n# =========================="
+  },
+  {
+    "idx": 33,
+    "type": "code",
+    "source": "# ==========================================\n# CELL 2: DATA PREPARATION FUNCTION\n# ================="
+  },
+  {
+    "idx": 34,
+    "type": "code",
+    "source": "# ==========================================\n# CELL 3: EXPERIMENT A - RAW DATA\n# ==================="
+  },
+  {
+    "idx": 35,
+    "type": "code",
+    "source": "# ==========================================\n# CELL 4: EXPERIMENT B - ENGINEERED DATA\n# ============"
+  },
+  {
+    "idx": 36,
+    "type": "code",
+    "source": "# ==========================================\n# CELL 5: SUMMARY TABLE & VISUALIZATION\n# ============="
+  },
+  {
+    "idx": 37,
+    "type": "code",
+    "source": "import pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nimport "
+  },
+  {
+    "idx": 38,
+    "type": "code",
+    "source": "# ==============================================================================\n# \u0110\u1ed2 \u00c1N: D\u1ef0 B\u00c1O NHI"
+  }
+]
